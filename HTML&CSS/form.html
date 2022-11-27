@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="form.css" />
+    <style>
+      .pair {
+  display: inline;
+  width: 50%;
+}
+.main {
+  display: inline-flex;
+}
+input,
+label {
+  display: block;
+  width: 80%;
+  margin: 0px 20px;
+  padding: 15px;
+}
+h2 {
+  margin: 20px;
+  font-weight: 100;
+  color: rgb(88, 88, 88);
+  animation: h2 2s ease infinite reverse;
+}
+@keyframes h2 {
+  from {
+    color: #23a6d5;
+  }
+  to {
+    color: #e73c7e;
+  }
+}
+form {
+  background-color: white;
+  width: fit-content;
+  padding: 15px;
+  font-family: 'Times New Roman', Times, serif;
+  border-radius: 10px;
+  margin: auto;
+  max-width: fit-content;
+}
+html {
+  height: 100%;
+  width: 100;
+}
+
+body {
+  min-width: fit-content;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400%, 400%;
+  animation: gradient 10s ease infinite;
+}
+@keyframes gradient {
+  0% {
+    background-position: 20% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+input {
+  font-size: large;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: whitesmoke;
+  border-style: groove;
+}
+button {
+  width: 335px;
+  margin: 35px 20px;
+  padding: 18px;
+  font-size: larger;
+  color: white;
+  background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400%, 400%;
+  animation: gradient 15s ease infinite;
+  border-radius: 7px;
+  border-width: 0px;
+}
+button:hover {
+  transform: scale(1.1) perspective(1px);
+}
+img {
+  text-align: end;
+  height: 60px;
+  width: 335px;
+  background-color: skyblue;
+  border-radius: 10px;
+  margin: 35px 20px;
+}
+html {
+  margin: auto;
+  padding-top: 50px;
+}
+
+.side {
+  width: 50%;
+}
+
+    </style>
+    <title>Pretty Form</title>
+  </head>
+  <body>
+    <form>
+      <h2>Dear Customer, please fill out the form</h2>
+      <div class="main">
+        <div class="side">
+          <div class="pair">
+            <label for="Fname">First Name</label>
+            <input type="text" id="Fname" placeholder="Enter your First Name" />
+            <br />
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" />
+          </div>
+          <br />
+          <div class="pair">
+            <label for="model">Model</label>
+            <input type="text" id="model" placeholder="Enter your car model" />
+
+            <br />
+            <label for="year">Year</label>
+            <input
+              type="text"
+              id="year"
+              placeholder="Enter production year"
+              onfocus="(this.type='date')" />
+            <br />
+            <button name="Submit">Submit</button>
+          </div>
+        </div>
+        <div class="side">
+          <div class="pair">
+            <label for="lname">Last Name</label>
+            <input
+              type="text"
+              id="Lname"
+              id="lname"
+              placeholder="Enter your Last Name" />
+
+            <br />
+            <label for="phone">Phone number</label>
+            <input
+              type="text"
+              id="phone"
+              placeholder="Enter your phone number" />
+          </div>
+          <br />
+          <div class="pair">
+            <label for="type">Type</label>
+            <input type="text" id="type" placeholder="Enter your car type" />
+            <br />
+            <label for="milage">Milage </label>
+            <input type="text" id="milage" placeholder="Enter your milage" />
+            <br />
+            <a href="https://www.getforce.dev/">
+              <img
+                src="https://import.cdn.thinkific.com/444825%2Fcustom_site_themes%2Fid%2FQ1fyi3hRpGnNwsv0KyUw_Comp%201_1%20%281%29.gif?width=384&dpr=2"
+                alt="GetForceLogo" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

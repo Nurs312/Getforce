@@ -1,5 +1,6 @@
 .pair {
   display: inline;
+  width: 50%;
 }
 .main {
   display: inline-flex;
@@ -7,7 +8,7 @@
 input,
 label {
   display: block;
-  width: 300px;
+  width: 80%;
   margin: 0px 20px;
   padding: 15px;
 }
@@ -27,23 +28,22 @@ h2 {
 }
 form {
   background-color: white;
-  width: 750px;
+  width: fit-content;
   padding: 15px;
   font-family: 'Times New Roman', Times, serif;
   border-radius: 10px;
-  margin: 70px 320px;
+  margin: auto;
+  max-width: fit-content;
 }
-html,
+html {
+  height: 100%;
+  width: 100;
+}
+
 body {
+  min-width: fit-content;
   height: 100%;
   width: 100%;
-}
-
-html {
-  margin: auto;
-}
-
-body {
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400%, 400%;
   animation: gradient 10s ease infinite;
@@ -88,4 +88,12 @@ img {
   background-color: skyblue;
   border-radius: 10px;
   margin: 35px 20px;
+}
+html {
+  margin: auto;
+  padding-top: 50px;
+}
+
+.side {
+  width: 50%;
 }
